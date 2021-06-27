@@ -14,11 +14,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    roles:{
-        type:String,
-        enum:['admin','general'],
-        default:'general'
-    }
+    // roles:{
+    //     type:String,
+    //     enum:['admin','general'],
+    //     default:'general'
+    // }
 })
 
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

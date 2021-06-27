@@ -1,16 +1,18 @@
 require( './data/init' );
 const express = require( 'express' );
+const cors = require('cors');
 const path = require( 'path' );
 const PORT = process.env.PORT || 3000;
 const authRouter = require('./routes/auth');
 const usersRouter = require('./routes/users');
-const app = express();
 
+const app = express();
+app.use( cors() );
 app.use( express.json() );
 app.use( express.urlencoded({ extended: false }) );
 
-app.use('/api/auth',authRouter);
-app.use('/api/users',usersRouter);
+app.use('/auth',authRouter);
+app.use('/users',usersRouter);
 
 app.listen( PORT,( error ) => {
     if( error ){

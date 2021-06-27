@@ -5,35 +5,61 @@ const mongoose = require( 'mongoose' );
 
 const User = mongoose.model( 'User' );
 
-const register = (req,res,next) => {
-    const credentials = req.body;
+// const register = (req,res,next) => {
+//     const credentials = req.body;
     
-    if(!credentials.email){
-        const error = new Error("Email Id not supplied");
-        error.status = 400;
-        return next(error);
+//     if(!credentials.email){
+//         const error = new Error("Email Id not supplied");
+//         error.status = 400;
+//         return next(error);
+//     }
+//     User
+//         .findOne( {email:credentials.email})
+//         .exec( (error, result)=>{
+//             if(error){
+//                 const error = new Error("unknown db Error");
+//                 error.status = 500;
+//                 return next(error);
+//             }
+//             if (result){
+//                 const error = new Error("User with this email has already registered");
+//                 error.status = 409;
+//                 return next(error);
+//             }
+//         User.
+//              create(credentials,(error,createdUser)=>{
+//                  if(error){
+//                      error.status = 500
+//                      return next(error);
+//                  }
+//              })
+//         })
+// }
+const register = (req,res,next) => {
+     
+    const user=req.body;
+    if(!user) {
+         const error = new Error("User Details is not present");
+         next(error);
+         return ;
     }
     User
-        .findOne( {email:credentials.email})
-        .exec( (error, result)=>{
-            if(error){
-                const error = new Error("unknown db Error");
-                error.status = 500;
-                return next(error);
-            }
-            if (result){
-                const error = new Error("User with this email has already registered");
-                error.status = 409;
-                return next(error);
-            }
-        User.
-             create(credentials,(error,createdUser)=>{
-                 if(error){
-                     error.status = 500
-                     return next(error);
-                 }
-             })
-        })
+    .create(user)
+    .then(newUser=>{
+        res.status(201).json(newUser);
+    })
+    .catch( error=>{
+        if(error==="ValidationError"){
+            error.status = 400;
+        }
+        else{
+            error.status = 500;
+        }
+
+        return next(error);
+        
+    });
+    
 }
 
 const login = (req,res,next) =>{

@@ -2,7 +2,7 @@ const mongoose = require( 'mongoose' );
 
 require('../model/User');
 
-const uri = 'mongodb://localhost:27017/meetingsDB';
+const uri = 'mongodb://localhost:27017/quizappDB';
 
 mongoose.connect( uri, { useNewUrlParser: true, useUnifiedTopology: true } );
 
