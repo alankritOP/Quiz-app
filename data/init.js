@@ -1,6 +1,8 @@
 const mongoose = require( 'mongoose' );
 
 require('../model/User');
+require( '../model/Topic' );
+require('../model/Question');
 
 const uri = 'mongodb://localhost:27017/quizappDB';
 

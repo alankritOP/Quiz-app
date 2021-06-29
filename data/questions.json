@@ -1,0 +1,96 @@
+[
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "Inside which HTML element do we put the JavaScript?",
+        "choices": [
+            "<script>",
+            "<Javascript>",
+            "<js>",
+            "<scripting>"
+        ],
+        "answer": 4
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "Where is the correct place to insert a JavaScript?",
+        "choices": [
+            "the head section",
+            "Both the head section and body section are correct",
+            "the body section"
+        ],
+        "answer": 2
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "The external JavaScript file must contain the <script> tag.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "answer": 1
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "How do you write Hello World in an alert box?",
+        "choices": [
+           "msg('Hello World')",
+           "msgBox('Hello World')",
+           "alert('Hello World')",
+           "alertBox('Hello World')"
+        ],
+        "answer": 3
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "How do you create a function in JavaScript?",
+        "choices": [
+            "function myFunction()",
+            "function myFunction()",
+            "function = myFunction()"
+        ],
+        "answer": 2
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "How to write an IF statement in JavaScript?",
+        "choices": [
+            "if i = 5 then",
+            "if(i==5)",
+            "if i == 5 then",
+            "if i=5"
+        ],
+        "answer": 1
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "How does a WHILE loop start?",
+        "choices": [
+           "while(i<=10)",
+           "while(i<=10;i++)",
+           "while i=1 to 10"
+        ],
+        "answer": 2
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "How does a FOR loop start?",
+        "choices": [
+           "for i=1 to 5",
+           "for (i=0;i<=5;i++)",
+           "for(i=0;i<=5)",
+           "for(i<=5;i++)"
+        ],
+        "answer": 1
+    },
+    {
+        "topicId": "60d9ef371d34f92dd8d117fb",
+        "question": "How do you round the number 7.25, to the nearest integer?",
+        "choices": [
+           "round(7.25)",
+           "Math.rnd(7.25)",
+           "rnd(7.25)",
+           "Math.round(7.25)"
+        ],
+        "answer": 3
+    }
+]

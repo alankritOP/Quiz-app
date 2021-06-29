@@ -5,7 +5,9 @@ const topicSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        unique:true
+        unique:true,
+        index:true,
+        sparse:true
     },
     maxMarks:{
         type:Number,
@@ -15,7 +17,6 @@ const topicSchema = new mongoose.Schema({
         type:Number,
         required:true
     }
-
 });
 
 mongoose.model('Topic',topicSchema);
