@@ -34,9 +34,26 @@ const getQuestionsById = ( req,res,next ) => {
 }
 
 
+const getMarks = ( req,res,next ) => {
+    var count=0;
+    console.log(req.body);
+    const {answers,questions} = req.body;
+    for(let i=0;i<answers.length;i++){
+        let k=answers[i] + 1;
+        if(k===questions[i].answer){
+            count=count+1;
+        }
+    }
+    console.log(count);
+    let op=count.toString();
+    res.status(201).send(op);
+}
+
+
 module.exports = {
     addQuestions,
-    getQuestionsById
+    getQuestionsById,
+    getMarks
 }
 
 

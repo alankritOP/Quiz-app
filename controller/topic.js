@@ -1,15 +1,4 @@
-// const topics = require('../data/topics.json');
-
-// const getTopics = (req,res) =>{
-//     return res.json(topics);
-// }
-
-// module.exports = {
-//     getTopics
-// }
-
 const mongoose = require('mongoose');
-
 const Topic = mongoose.model('Topic');
 
 const addTopics = (req,res,next) => {

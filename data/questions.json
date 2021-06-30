@@ -1,6 +1,6 @@
 [
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "Inside which HTML element do we put the JavaScript?",
         "choices": [
             "<script>",
@@ -11,7 +11,7 @@
         "answer": 4
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "Where is the correct place to insert a JavaScript?",
         "choices": [
             "the head section",
@@ -21,7 +21,7 @@
         "answer": 2
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "The external JavaScript file must contain the <script> tag.",
         "choices": [
             "True",
@@ -30,7 +30,7 @@
         "answer": 1
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "How do you write Hello World in an alert box?",
         "choices": [
            "msg('Hello World')",
@@ -41,7 +41,7 @@
         "answer": 3
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "How do you create a function in JavaScript?",
         "choices": [
             "function myFunction()",
@@ -51,7 +51,7 @@
         "answer": 2
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "How to write an IF statement in JavaScript?",
         "choices": [
             "if i = 5 then",
@@ -62,7 +62,7 @@
         "answer": 1
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "How does a WHILE loop start?",
         "choices": [
            "while(i<=10)",
@@ -72,7 +72,7 @@
         "answer": 2
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "How does a FOR loop start?",
         "choices": [
            "for i=1 to 5",
@@ -83,7 +83,7 @@
         "answer": 1
     },
     {
-        "topicId": "60d9ef371d34f92dd8d117fb",
+        "topicId": "60d9faf91d34f92dd8d11800",
         "question": "How do you round the number 7.25, to the nearest integer?",
         "choices": [
            "round(7.25)",
@@ -208,31 +208,10 @@
             "style={{font-size:12px,color:'red'}}"
         ],
         "answer": 3
-    },
-
-
-
-    {
-        "topicId": "60d9faf91d34f92dd8d11801",
-        "question": "What is a correct syntax to output Hello World in Python?",
-        "choices": [
-           "print('Hello World)",
-           "echo('Hello World')",
-           "echo Hello World",
-           "p('Hello World')"
-        ],
-        "answer": 3
     }
 
-
-
-
-
-
-
-
-
-
-
-
 ]
+
+
+
+   
